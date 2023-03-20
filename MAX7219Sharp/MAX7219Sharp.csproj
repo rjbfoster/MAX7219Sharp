@@ -1,10 +1,32 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MAX7219Sharp</Title>
+    <Description>C# class library which allows easy manipulation of 7-segment (and similar) LED displays, driven by the MAX7219 chip. Ideal for projects deployed to Raspberry Pi and similar platforms.</Description>
+    <PackageProjectUrl>https://github.com/rjbfoster/MAX7219Sharp</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/rjbfoster/MAX7219Sharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>csharp; c#; MAX7219; LED; display; 7-segment; raspberry-pi</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <ApplicationIcon>Assets\7219ico.ico</ApplicationIcon>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Device.Gpio" Version="2.2.0" />
