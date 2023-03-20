@@ -275,7 +275,7 @@ namespace MAX7219Sharp
             // Clear the display after the scrolling has finished
             ClearDisplay();
         }
-        public void WriteMessage(string inputMessage)
+        public void Write(string inputMessage)
         {
             // Write the input to the LED display
             ClearDisplay();
