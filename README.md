@@ -13,13 +13,13 @@ Download and install the package using NuGet:
 
 You can also use the Package Manager Console:
 
-```NuGet\Install-Package MAX7219Sharp -Version 1.0.0```
+```PM> NuGet\Install-Package MAX7219Sharp -Version 1.0.0```
 
 ### Example
 
 A simple example of how to use the library is shown below:
 
-```
+```csharp
 using MAX7219Sharp;
 
 Console.WriteLine("Writing HELLO to display");
