@@ -15,7 +15,17 @@ You can also use the Package Manager Console:
 
 ```PM> NuGet\Install-Package MAX7219Sharp -Version 1.0.0```
 
-### Example
+### Wiring Example
+
+| MAX7219 Pin | RPi Pin | Description |
+| --- | --- | --- |
+| VCC | 2 (+5V) | 5V power supply |
+| GND | 6 (GND) | Ground |
+| DIN | 19 (MOSI) | Data in |
+| CS | 24 (SPI CE0) | Chip Select 0 |
+| CLK | 23 (SPI CLK) | Clock |
+
+### Code Example
 
 A simple example of how to use the library is shown below:
 
@@ -31,7 +41,7 @@ Thread.Sleep(1000);
 
 device.ClearDisplay();
 
-Console.WriteLine("Press any key to quit");
+Console.WriteLine("Press any key to exit");
 Console.ReadKey();
 ```
 

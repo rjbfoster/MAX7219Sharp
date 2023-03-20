@@ -17,6 +17,12 @@ Console.ReadKey();
 // Write the word 'HELLO'
 max7219.Write("HELLO");
 
+Console.WriteLine("Press any key to clear the display");
+Console.ReadKey();
+
+// Clear the display
+max7219.ClearDisplay();
+
 Console.WriteLine("Press any key to scroll the word 'BYE' for 10 seconds");
 Console.ReadKey();
 
